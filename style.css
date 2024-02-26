@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.container{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.quiz-layout{
+    width: 500px;
+    height: 450px;
+    margin-top: -30px;
+}
+.container h1{
+    color: rgb(34, 13, 32);
+}
+.top-part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.modal-body{
+    font-weight: bold;
+}
+.line{
+    height: 2px;
+    background-color: rgb(34, 13, 32);
+    width: 342px;
+    position: relative;
+    left: 80px;
+    top: 8px;
+}
+.question{
+    font-size: 18px;
+}
+.option-div p{
+    border: 2px solid rgb(34, 13, 32);
+    height: 35px;
+    border-radius: 20px;
+}
+
+.bottom-part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.question-num{
+    margin: auto 0px;
+}
+.next{
+    border: 2px solid rgb(34, 13, 32);
+    width: 100px;
+    color: rgb(34, 13, 32);
+    background-color: transparent;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.next:hover{
+    background-color: rgb(34, 13, 32);
+    color: white;
+}
+.option-btn{
+    display: flex;
+    flex-direction: column;
+    margin: 12px auto;
+    padding: 5px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgb(34, 13, 32);
+    border-radius: 6px;
+    transition: all;
+    transition-duration: 0.2s;
+}
+.option-btn:hover{
+    background-color: rgb(34, 13, 32);
+    color: white;
+}
+.disabled{
+    pointer-events: none;
+    color: gray;
+}
+
+
+@media only screen and (max-width: 576px){
+    body{
+        background-color: red;
+    }
+}
